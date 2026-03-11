@@ -8,67 +8,67 @@ const team = [
   {
     name: 'Adrián Román',
     role: 'Fundador y Director',
-    img: 'https://static.wixstatic.com/media/3547fa_b869226d24fb411e91a4e648d2f8efe3~mv2.jpg/v1/crop/x_100,y_584,w_2148,h_2413/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Equipo%20VMCR-02.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_b869226d24fb411e91a4e648d2f8efe3~mv2.jpg/v1/crop/x_100,y_584,w_2148,h_2413/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Equipo%20VMCR-02.jpg',
   },
   {
     name: 'José De La Rosa',
     role: 'Director de Legal',
-    img: 'https://static.wixstatic.com/media/3547fa_92b42017b1774b17aae5d51699ba4b65~mv2.jpg/v1/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Lexline-85.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_92b42017b1774b17aae5d51699ba4b65~mv2.jpg/v1/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Lexline-85.jpg',
   },
   {
     name: 'Aldo Damián H.',
     role: 'Director de Litigio',
-    img: 'https://static.wixstatic.com/media/3547fa_bf2c493514ab47349267f052c11d51bf~mv2.jpg/v1/crop/x_0,y_558,w_2434,h_2733/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Equipo%20VMCR-23.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_bf2c493514ab47349267f052c11d51bf~mv2.jpg/v1/crop/x_0,y_558,w_2434,h_2733/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Equipo%20VMCR-23.jpg',
   },
   {
     name: 'Fernando Bruno',
     role: 'Litigante',
-    img: 'https://static.wixstatic.com/media/3547fa_6865269e312149db915ae2121a5e7b04~mv2.jpg/v1/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Equipo%20VMCR-03.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_6865269e312149db915ae2121a5e7b04~mv2.jpg/v1/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Equipo%20VMCR-03.jpg',
   },
   {
     name: 'Perla Roman',
     role: 'Familiar / Notarial',
-    img: 'https://static.wixstatic.com/media/3547fa_36943b0f90a94854aff1e16a5e19271e~mv2.jpg/v1/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/b1585db5-6ceb-4a35-a79c-b3e56ee22ba4_JPG.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_36943b0f90a94854aff1e16a5e19271e~mv2.jpg/v1/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/b1585db5-6ceb-4a35-a79c-b3e56ee22ba4_JPG.jpg',
   },
   {
     name: 'Daniela Olmos',
     role: 'Empresarial / Ambiental',
-    img: 'https://static.wixstatic.com/media/3547fa_7c3b5d07c6a44a648ee9242b85532353~mv2.jpg/v1/crop/x_0,y_641,w_3667,h_4117/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Lexline-32.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_7c3b5d07c6a44a648ee9242b85532353~mv2.jpg/v1/crop/x_0,y_641,w_3667,h_4117/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Lexline-32.jpg',
   },
   {
     name: 'Estefanía Rivera',
     role: 'Administrativo / Amparo',
-    img: 'https://static.wixstatic.com/media/3547fa_47a3a9b62db9438fb35a33a18622e3f4~mv2.jpg/v1/crop/x_0,y_414,w_3846,h_4314/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Lexline-14.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_47a3a9b62db9438fb35a33a18622e3f4~mv2.jpg/v1/crop/x_0,y_414,w_3846,h_4314/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Lexline-14.jpg',
   },
   {
     name: 'Marlon Villarreal',
     role: 'Administrativo',
-    img: 'https://static.wixstatic.com/media/3547fa_0c2c8108371048249f44c790cc175495~mv2.jpg/v1/crop/x_0,y_606,w_3987,h_4787/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Lexline-70.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_0c2c8108371048249f44c790cc175495~mv2.jpg/v1/crop/x_0,y_606,w_3987,h_4787/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Lexline-70.jpg',
   },
   {
     name: 'Maximiliano Román',
     role: 'Paralegal',
-    img: 'https://static.wixstatic.com/media/3547fa_2cf9f6c4c6ee42b5a80fad593c8e1d5f~mv2.jpg/v1/crop/x_0,y_802,w_4000,h_4485/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Lexline-53.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_2cf9f6c4c6ee42b5a80fad593c8e1d5f~mv2.jpg/v1/crop/x_0,y_802,w_4000,h_4485/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Lexline-53.jpg',
   },
   {
     name: 'Jesús M. Sáenz V.',
     role: 'Abogado penalista',
-    img: 'https://static.wixstatic.com/media/3547fa_6292ecffe145446ca68a89f2bdad6277~mv2.jpg/v1/crop/x_0,y_424,w_2624,h_2946/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/vmcr%20equipo.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_6292ecffe145446ca68a89f2bdad6277~mv2.jpg/v1/crop/x_0,y_424,w_2624,h_2946/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/vmcr%20equipo.jpg',
   },
   {
     name: 'Jocelyne Correa M.',
     role: 'Practicante de litigio',
-    img: 'https://static.wixstatic.com/media/3547fa_0616ad0ebcf846cead4f3c8d233382e8~mv2.jpg/v1/crop/x_0,y_434,w_2303,h_2586/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/A7309659.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_0616ad0ebcf846cead4f3c8d233382e8~mv2.jpg/v1/crop/x_0,y_434,w_2303,h_2586/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/A7309659.jpg',
   },
   {
     name: 'Darine De León',
     role: 'Corporativo',
-    img: 'https://static.wixstatic.com/media/3547fa_46f48e67107c4c1b8487388098606448~mv2.jpg/v1/crop/x_0,y_283,w_2242,h_2514/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/A7309694.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_46f48e67107c4c1b8487388098606448~mv2.jpg/v1/crop/x_0,y_283,w_2242,h_2514/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/A7309694.jpg',
   },
   {
     name: 'Josselyn García',
     role: 'Auxiliar',
-    img: 'https://static.wixstatic.com/media/3547fa_6593a31a09a8442dbfc6cfc659898671~mv2.jpg/v1/crop/x_0,y_537,w_2584,h_2898/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Equipo%20VMCR-24.jpg',
+    img: 'https://static.wixstatic.com/media/3547fa_6593a31a09a8442dbfc6cfc659898671~mv2.jpg/v1/crop/x_0,y_537,w_2584,h_2898/fill/w_1080,h_1200,al_c,q_90,enc_avif,quality_auto/Equipo%20VMCR-24.jpg',
   },
 ];
 
