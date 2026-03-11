@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const services = [
@@ -20,67 +19,47 @@ const services = [
   },
 ];
 
-const containerVariants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.15 } },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
 export default function Servicios() {
   return (
-    <section id="servicios" className="bg-white py-24 px-6">
+    <section id="servicios" className="bg-[#f5f4f0] py-28 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
-        >
-          <h2 className="section-title text-[#0a0a0a] text-4xl md:text-5xl mb-4">
+        <div className="text-center mb-20">
+          <p className="font-[family-name:var(--font-montserrat)] text-[#CC5132] text-[10px] tracking-[0.4em] uppercase mb-4">
+            Lo que hacemos
+          </p>
+          <h2 className="font-[family-name:var(--font-montserrat)] font-black text-4xl md:text-5xl lg:text-6xl text-[#0a0a0a] tracking-[0.1em] mb-5">
             SERVICIOS
           </h2>
-          <div className="w-16 h-1 bg-[#CC5132] mx-auto" />
-        </motion.div>
+          <div className="w-12 h-[2px] bg-[#CC5132] mx-auto" />
+        </div>
 
         {/* Cards */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-12"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service) => (
-            <motion.div
+            <div
               key={service.title}
-              variants={cardVariants}
-              className="flex flex-col items-center text-center group"
+              className="flex flex-col items-center text-center group bg-white p-8 hover:shadow-xl transition-shadow duration-500"
             >
-              <div className="relative w-48 h-48 mb-8 overflow-hidden rounded-sm">
+              <div className="relative w-full h-[200px] mb-8 overflow-hidden">
                 <Image
                   src={service.img}
                   alt={service.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="192px"
+                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-[#0a0a0a] text-lg tracking-wide mb-4">
+              <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-[#0a0a0a] text-base tracking-wide mb-4 leading-snug">
                 {service.title}
               </h3>
-              <div className="w-8 h-0.5 bg-[#CC5132] mb-4" />
-              <p className="font-[family-name:var(--font-inter)] text-[#555] text-sm leading-relaxed max-w-xs">
+              <div className="w-8 h-[2px] bg-[#CC5132] mb-4" />
+              <p className="font-[family-name:var(--font-inter)] text-[#666] text-sm leading-relaxed">
                 {service.desc}
               </p>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

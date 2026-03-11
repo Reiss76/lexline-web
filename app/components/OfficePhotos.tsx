@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const photos = [
@@ -15,25 +14,21 @@ const photos = [
 
 export default function OfficePhotos() {
   return (
-    <section className="bg-[#0a0a0a] grid grid-cols-1 md:grid-cols-2">
-      {photos.map((photo, i) => (
-        <motion.div
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-[4px] bg-[#0a0a0a]">
+      {photos.map((photo) => (
+        <div
           key={photo.alt}
-          initial={{ opacity: 0, scale: 0.97 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: i * 0.2 }}
-          className="relative aspect-[4/3] overflow-hidden"
+          className="relative h-[400px] md:h-[500px] overflow-hidden group"
         >
           <Image
             src={photo.src}
             alt={photo.alt}
             fill
-            className="object-cover hover:scale-105 transition-transform duration-700"
+            className="object-cover group-hover:scale-105 transition-transform duration-700"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-          <div className="absolute inset-0 bg-black/20" />
-        </motion.div>
+          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
+        </div>
       ))}
     </section>
   );

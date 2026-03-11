@@ -13,10 +13,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mb-12">
           {/* Logo */}
           <div>
-            <p className="font-[family-name:var(--font-montserrat)] font-black text-3xl tracking-[0.3em] text-white mb-3">
+            <p className="font-[family-name:var(--font-montserrat)] font-black text-xl tracking-[0.4em] text-white mb-3">
               LEXLINE
             </p>
-            <p className="font-[family-name:var(--font-inter)] text-[#9B9A9A] text-xs max-w-xs">
+            <p className="font-[family-name:var(--font-inter)] text-[#9B9A9A] text-xs max-w-xs leading-relaxed">
               Modernizando el servicio legal con transparencia, lealtad y comunicación total.
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-[family-name:var(--font-montserrat)] font-medium text-xs tracking-widest text-[#9B9A9A] hover:text-[#CC5132] transition-colors uppercase"
+                className="font-[family-name:var(--font-montserrat)] font-medium text-[10px] tracking-[0.25em] text-[#9B9A9A] hover:text-white transition-colors uppercase"
               >
                 {link.label}
               </a>

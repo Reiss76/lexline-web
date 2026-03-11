@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -34,58 +33,38 @@ const steps = [
   },
 ];
 
-const containerVariants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
-
 export default function Proceso() {
   return (
     <section className="bg-[#0a0a0a] py-28 px-6 border-t border-white/10">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
-        >
-          <h2 className="section-title text-white text-4xl md:text-5xl mb-4">
+        <div className="text-center mb-20">
+          <p className="font-[family-name:var(--font-montserrat)] text-[#CC5132] text-[10px] tracking-[0.4em] uppercase mb-4">
+            Cómo trabajamos
+          </p>
+          <h2 className="font-[family-name:var(--font-montserrat)] font-black text-4xl md:text-5xl lg:text-6xl text-white tracking-[0.05em] mb-5">
             PROCESO
           </h2>
-          <div className="w-16 h-1 bg-[#CC5132] mx-auto" />
-        </motion.div>
+          <div className="w-12 h-[2px] bg-[#CC5132] mx-auto" />
+        </div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step) => (
-            <motion.div
+            <div
               key={step.num}
-              variants={itemVariants}
-              className="border border-white/10 p-8 hover:border-[#CC5132]/50 transition-colors duration-300 group"
+              className="border-l-2 border-[#CC5132]/40 hover:border-[#CC5132] bg-white/[0.02] hover:bg-white/[0.05] p-8 transition-all duration-300 group"
             >
-              <div className="font-[family-name:var(--font-montserrat)] font-black text-5xl text-[#CC5132]/20 group-hover:text-[#CC5132]/40 transition-colors mb-4">
+              <div className="font-[family-name:var(--font-montserrat)] font-black text-4xl text-[#CC5132] mb-5 leading-none">
                 {step.num}
               </div>
-              <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-white text-lg mb-3">
+              <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-white text-base tracking-wide mb-3 leading-snug">
                 {step.title}
               </h3>
               <p className="font-[family-name:var(--font-inter)] text-[#9B9A9A] text-sm leading-relaxed">
                 {step.desc}
               </p>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

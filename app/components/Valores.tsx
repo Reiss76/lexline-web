@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 
 const valores = [
   {
@@ -19,48 +18,28 @@ const valores = [
   },
 ];
 
-const containerVariants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.15 } },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
 export default function Valores() {
   return (
-    <section className="bg-[#111111] py-28 px-6 border-t border-white/10">
+    <section className="bg-[#0a0a0a] py-28 px-6 border-t border-white/10">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
-        >
-          <h2 className="section-title text-white text-4xl md:text-5xl mb-4">
+        <div className="text-center mb-20">
+          <p className="font-[family-name:var(--font-montserrat)] text-[#CC5132] text-[10px] tracking-[0.4em] uppercase mb-4">
+            Lo que nos define
+          </p>
+          <h2 className="font-[family-name:var(--font-montserrat)] font-black text-4xl md:text-5xl lg:text-6xl text-white tracking-[0.05em] mb-5">
             VALORES
           </h2>
-          <div className="w-16 h-1 bg-[#CC5132] mx-auto" />
-        </motion.div>
+          <div className="w-12 h-[2px] bg-[#CC5132] mx-auto" />
+        </div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-10"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {valores.map((v) => (
-            <motion.div
+            <div
               key={v.title}
-              variants={cardVariants}
               className="flex flex-col items-center text-center group"
             >
-              <div className="w-20 h-20 rounded-full border-2 border-[#CC5132] flex items-center justify-center mb-6 group-hover:bg-[#CC5132] transition-colors duration-300">
-                <span className="font-[family-name:var(--font-montserrat)] font-black text-2xl text-[#CC5132] group-hover:text-white transition-colors">
+              <div className="w-20 h-20 rounded-full border-2 border-[#CC5132] flex items-center justify-center mb-6 group-hover:bg-[#CC5132] transition-all duration-300">
+                <span className="font-[family-name:var(--font-montserrat)] font-black text-2xl text-[#CC5132] group-hover:text-white transition-colors duration-300">
                   {v.letter}
                 </span>
               </div>
@@ -70,9 +49,9 @@ export default function Valores() {
               <p className="font-[family-name:var(--font-inter)] text-[#9B9A9A] text-sm leading-relaxed max-w-xs">
                 {v.desc}
               </p>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
