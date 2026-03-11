@@ -58,17 +58,17 @@ const team = [
   {
     name: 'Jocelyne Correa M.',
     role: 'Practicante de litigio',
-    img: null,
+    img: 'https://static.wixstatic.com/media/3547fa_0616ad0ebcf846cead4f3c8d233382e8~mv2.jpg/v1/crop/x_0,y_434,w_2303,h_2586/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/A7309659.jpg',
   },
   {
     name: 'Darine De León',
     role: 'Corporativo',
-    img: null,
+    img: 'https://static.wixstatic.com/media/3547fa_46f48e67107c4c1b8487388098606448~mv2.jpg/v1/crop/x_0,y_283,w_2242,h_2514/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/A7309694.jpg',
   },
   {
     name: 'Josselyn García',
     role: 'Auxiliar',
-    img: null,
+    img: 'https://static.wixstatic.com/media/3547fa_6593a31a09a8442dbfc6cfc659898671~mv2.jpg/v1/crop/x_0,y_537,w_2584,h_2898/fill/w_540,h_600,al_c,q_80,enc_avif,quality_auto/Equipo%20VMCR-24.jpg',
   },
 ];
 
